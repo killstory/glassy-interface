@@ -46,12 +46,12 @@ const experiences = [
     highlights: ["Machine Learning", "Data Science", "NLP"],
   },
   {
-    company: "Research Lab",
+    company: "Mahidol University",
     role: "Lead Researcher",
-    period: "Jan 2019 - Aug 2020",
+    period: "Aug 2016 - Aug 2020",
     location: "Thailand",
-    description: "Led research initiatives in emerging technologies, published papers on AI applications, and mentored junior researchers in machine learning methodologies.",
-    highlights: ["Research Leadership", "Publications", "Mentorship"],
+    description: "Lead Researcher & Data Analyst. Published study on cytogenetics and pollen identification of the genus Gagnepainia (Zingiberaceae) in Thailand.",
+    highlights: ["Botany", "Scientific Analysis", "Data Analysis", "Scientific Writing"],
   },
 ];
 
