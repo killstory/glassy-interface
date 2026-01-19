@@ -49,9 +49,7 @@ export function HeroSection() {
                 Paramet Moonkaew
               </h2>
 
-              <p className="text-muted-foreground text-lg md:text-xl font-light max-w-xl leading-relaxed mb-6">
-                As Chief Investment Officer at AMS Fund, I manage strategic fund operations, applying extensive expertise in risk management, investment strategies, and yield optimization.
-              </p>
+              <p className="text-muted-foreground text-lg md:text-xl font-light max-w-xl leading-relaxed mb-6">Chief Investment Officer at AMS Fund, I manage strategic fund operations, applying extensive expertise in risk management, investment strategies, and yield optimization.</p>
               
               <p className="text-muted-foreground text-lg md:text-xl font-light max-w-xl leading-relaxed mb-10">
                 I actively contribute to the Web3 ecosystem as a Blockchain Consultant and AI Researcher.
