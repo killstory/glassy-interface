@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Navigation } from "./Navigation";
+import profileImage from "@/assets/paramet-profile.png";
 
 const letterAnim = {
   initial: { y: "100%", opacity: 0 },
@@ -26,6 +27,31 @@ export function HeroSection() {
       {/* Hero Content */}
       <div className="flex-1 flex items-center justify-center px-6 md:px-12 py-20">
         <div className="text-center max-w-6xl mx-auto">
+          {/* Profile Image */}
+          <motion.div
+            className="relative inline-block mb-8"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
+              <img
+                src={profileImage}
+                alt="Paramet Moonkaew"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            {/* Open to opportunities badge */}
+            <motion.div
+              className="absolute -bottom-2 -right-2 bg-primary text-primary-foreground text-xs font-medium px-3 py-1.5 rounded-full shadow-lg"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+            >
+              Open to opportunities
+            </motion.div>
+          </motion.div>
+
           {/* Massive Typography */}
           <motion.div
             className="overflow-hidden"
