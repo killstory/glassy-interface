@@ -64,22 +64,20 @@ export function Footer() {
             <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-6">
               Connect
             </h3>
-            <ul className="space-y-4">
+            <div className="flex flex-wrap gap-3">
               {socials.map((social) => (
-                <li key={social.name}>
-                  <a
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-foreground hover:text-primary transition-colors flex items-center gap-3 group cursor-scale"
-                  >
-                    <social.icon className="w-5 h-5" />
-                    <span>{social.name}</span>
-                    <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </a>
-                </li>
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-2 px-4 py-2.5 bg-muted/50 hover:bg-primary hover:text-primary-foreground rounded-full transition-all cursor-scale"
+                >
+                  <social.icon className="w-4 h-4" />
+                  <span className="text-sm font-medium">{social.name}</span>
+                </a>
               ))}
-            </ul>
+            </div>
           </div>
 
           {/* Contact */}
@@ -87,25 +85,32 @@ export function Footer() {
             <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-6">
               Contact
             </h3>
-            <ul className="space-y-4">
-              <li>
-                <a
-                  href="mailto:paramet.moon@gmail.com"
-                  className="text-foreground hover:text-primary transition-colors cursor-scale"
-                >
-                  paramet.moon@gmail.com
-                </a>
-              </li>
-              <li>
-                <a
-                  href="tel:+66819841878"
-                  className="text-foreground hover:text-primary transition-colors cursor-scale"
-                >
-                  +66 81 984 1878
-                </a>
-              </li>
-              <li className="text-muted-foreground">Thailand</li>
-            </ul>
+            <div className="space-y-3">
+              <a
+                href="mailto:paramet.moon@gmail.com"
+                className="flex items-center gap-3 text-foreground hover:text-primary transition-colors cursor-scale group"
+              >
+                <span className="w-8 h-8 rounded-full bg-muted/50 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                  <ArrowUpRight className="w-4 h-4" />
+                </span>
+                <span>paramet.moon@gmail.com</span>
+              </a>
+              <a
+                href="tel:+66819841878"
+                className="flex items-center gap-3 text-foreground hover:text-primary transition-colors cursor-scale group"
+              >
+                <span className="w-8 h-8 rounded-full bg-muted/50 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                  <ArrowUpRight className="w-4 h-4" />
+                </span>
+                <span>+66 81 984 1878</span>
+              </a>
+              <div className="flex items-center gap-3 text-muted-foreground">
+                <span className="w-8 h-8 rounded-full bg-muted/50 flex items-center justify-center">
+                  <span className="text-xs">📍</span>
+                </span>
+                <span>Thailand</span>
+              </div>
+            </div>
           </div>
         </div>
 
