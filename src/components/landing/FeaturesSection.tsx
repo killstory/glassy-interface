@@ -30,6 +30,27 @@ const experiences = [
     year: "2025",
     slug: "talus-labs",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop"
+  },
+  { 
+    title: "D1ckDAO", 
+    category: "AI Researcher", 
+    year: "2025",
+    slug: "d1ckdao",
+    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=2670&auto=format&fit=crop"
+  },
+  { 
+    title: "AIAT", 
+    category: "AI Researcher", 
+    year: "2020-2024",
+    slug: "aiat",
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=2670&auto=format&fit=crop"
+  },
+  { 
+    title: "Mahidol University", 
+    category: "Lead Researcher & Data Analyst", 
+    year: "2016-2020",
+    slug: "mahidol-university",
+    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2670&auto=format&fit=crop"
   }
 ];
 
@@ -48,7 +69,7 @@ export function FeaturesSection() {
           >
             Latest Experience.
           </motion.h2>
-          <span className="text-muted-foreground font-mono text-sm">( _04 )</span>
+          <span className="text-muted-foreground font-mono text-sm">( _07 )</span>
         </div>
 
         {/* Project Grid */}
