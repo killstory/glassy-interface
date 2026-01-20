@@ -12,6 +12,9 @@ import talusSuifestTeam from "@/assets/talus-suifest-team.jpeg";
 import talusSuiSeasonMeetup from "@/assets/talus-sui-season-meetup.jpeg";
 import spectreLabsCover from "@/assets/spectre-labs-cover.png";
 import tecCertificate from "@/assets/tec-certificate.png";
+import mahidolPlenaryAward from "@/assets/mahidol-plenary-award.png";
+import mahidolTurfpagAward from "@/assets/mahidol-turfpag-award.png";
+import mahidolSingaporeAward from "@/assets/mahidol-singapore-award.png";
 import amsFundCover from "@/assets/ams-fund-cover.png";
 import d1ckdaoCover from "@/assets/d1ckdao-cover.jpeg";
 import grvtCover from "@/assets/grvt-cover.jpg";
@@ -171,6 +174,14 @@ const experienceDetails: Record<string, {
       "Published study on cytogenetics and pollen identification of the genus Gagnepainia (Zingiberaceae) in Thailand",
       "Data analysis and statistical modeling for research findings",
       "Collaborate with international research communities"
+    ],
+    links: [
+      { label: "Cytogenetic and pollen identification of genus Gagnepainia (Zingiberaceae) in Thailand", url: "https://pubmed.ncbi.nlm.nih.gov/31988702/" }
+    ],
+    gallery: [
+      { image: mahidolPlenaryAward, caption: "Plenary Lecture Award The Science Project Exhibition" },
+      { image: mahidolSingaporeAward, caption: "Research & Presentation Award at 17th Flora of Thailand Conference and 8th world International Zingiberales Symposium at Singapore Botanic Gardens" },
+      { image: mahidolTurfpagAward, caption: "1st Place Presentation Award in TURFPaG (Thailand Under Graduate Research Forum on Plants and Genetics)" }
     ]
   },
   "tec": {
