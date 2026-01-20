@@ -5,6 +5,7 @@ import { ArrowLeft, ExternalLink } from "lucide-react";
 import d1ckdaoTeamImage from "@/assets/d1ckdao-desci-summit.jpeg";
 import grvtIrlMeetup from "@/assets/grvt-irl-meetup.png";
 import grvtEsportCompetition from "@/assets/grvt-esport-competition.jpeg";
+import talusSuifestTeam from "@/assets/talus-suifest-team.jpeg";
 import spectreLabsCover from "@/assets/spectre-labs-cover.png";
 import amsFundCover from "@/assets/ams-fund-cover.png";
 import d1ckdaoCover from "@/assets/d1ckdao-cover.jpeg";
@@ -93,6 +94,14 @@ const experienceDetails: Record<string, {
     responsibilities: [
       "Lead Talus Thailand community",
       "Organized and executed the Talus Thailand IRL event"
+    ],
+    links: [
+      { label: "Talus Labs", url: "https://talus.network/" },
+      { label: "Talus Thailand Community on X", url: "https://x.com/TalusThailand" },
+      { label: "Talus Thailand IRL Event", url: "https://luma.com/n13e5r3q" }
+    ],
+    gallery: [
+      { image: talusSuifestTeam, caption: "Talus Thailand Team in Suifest", url: "https://x.com/killstoryyy/status/1973698197680992319/photo/1" }
     ]
   },
   "d1ckdao": {
