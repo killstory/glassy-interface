@@ -211,6 +211,9 @@ const experienceDetails: Record<string, {
       "Apply Artificial Intelligence (AI) and Data Science techniques",
       "Develop recommender systems for E-Commerce platform",
       "Conduct research to optimize product recommendations"
+    ],
+    links: [
+      { label: "Srichand Shop (Prev. 1948Beauty.com)", url: "https://srichand.com/" }
     ]
   }
 };
