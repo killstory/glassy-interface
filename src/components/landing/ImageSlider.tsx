@@ -91,7 +91,7 @@ export const ImageSlider = () => {
                 <img
                   src={item.image}
                   alt={item.caption}
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-105 transition-all duration-700"
+                  className="w-full h-full object-cover hover:scale-105 transition-all duration-700"
                 />
                 
                 {/* Gradient overlay for caption readability */}
