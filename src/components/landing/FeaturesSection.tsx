@@ -81,18 +81,15 @@ export function FeaturesSection() {
     <section id="experience" className="bg-background px-6 md:px-12 py-24 lg:py-32">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
-          <motion.h2
-            className="text-5xl md:text-7xl font-bold text-foreground tracking-tighter leading-[0.9]"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            Latest Experience.
-          </motion.h2>
-          <span className="text-muted-foreground font-mono text-sm">( _10 )</span>
-        </div>
+        <motion.h2
+          className="text-5xl md:text-7xl font-bold text-foreground tracking-tighter mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          Experience<span className="text-primary">.</span>
+        </motion.h2>
 
         {/* Project Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
