@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Import local gallery images
@@ -13,47 +14,57 @@ import tecCertificate from '@/assets/tec-certificate.png';
 import forruVolunteer1 from '@/assets/forru-volunteer-1.jpg';
 import mahidolPlenary from '@/assets/mahidol-plenary-award.png';
 
-// Gallery images with captions
+// Gallery images with captions and slugs
 const galleryItems = [
   { 
     image: amsFundCover,
-    caption: "AMS Fund - Chief Investment Officer"
+    caption: "AMS Fund - Chief Investment Officer",
+    slug: "ams-fund"
   },
   { 
     image: spectreLabsCover,
-    caption: "Spectre Labs - Co-Founder"
+    caption: "Spectre Labs - Co-Founder",
+    slug: "spectre-labs"
   },
   { 
     image: d1ckdaoDeSciSummit,
-    caption: "D1ckDAO - DeSci Summit 2024"
+    caption: "D1ckDAO - DeSci Summit 2024",
+    slug: "d1ckdao"
   },
   { 
     image: grvtEsport,
-    caption: "GRVT - Esport Competition"
+    caption: "GRVT - Esport Competition",
+    slug: "grvt-exchange"
   },
   { 
     image: talusSuifest,
-    caption: "Talus Labs - SuiFest Team"
+    caption: "Talus Labs - SuiFest Team",
+    slug: "talus-labs"
   },
   { 
     image: aiatTeam,
-    caption: "AIAT - Research Team"
+    caption: "AIAT - Research Team",
+    slug: "aiat"
   },
   { 
     image: srichandCover,
-    caption: "Srichand United Dispensary"
+    caption: "Srichand United Dispensary",
+    slug: "srichand"
   },
   { 
     image: tecCertificate,
-    caption: "TEC - Digital Marketing Certificate"
+    caption: "TEC - Digital Marketing Certificate",
+    slug: "tec"
   },
   { 
     image: forruVolunteer1,
-    caption: "FORRU - Volunteer Staff"
+    caption: "FORRU - Volunteer Staff",
+    slug: "forest-restoration"
   },
   { 
     image: mahidolPlenary,
-    caption: "Mahidol - Plenary Lecture Award"
+    caption: "Mahidol - Plenary Lecture Award",
+    slug: "mahidol-university"
   }
 ];
 
@@ -81,9 +92,10 @@ export const ImageSlider = () => {
       <div className="slider-container">
         <div className="flex animate-marquee" style={{ width: 'fit-content' }}>
           {duplicatedItems.map((item, i) => (
-            <div
+            <Link
               key={`gallery-${i}`}
-              className="flex-shrink-0 w-[280px] md:w-[350px] h-[180px] md:h-[240px] mx-2 cursor-scale"
+              to={`/experience/${item.slug}`}
+              className="flex-shrink-0 w-[280px] md:w-[350px] h-[180px] md:h-[240px] mx-2 cursor-scale block"
               onMouseEnter={() => setHoveredIndex(i)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
@@ -114,7 +126,7 @@ export const ImageSlider = () => {
                   )}
                 </AnimatePresence>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
