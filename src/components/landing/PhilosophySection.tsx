@@ -123,9 +123,14 @@ export function PhilosophySection() {
               </p>
               <p className="text-primary font-mono text-sm">2015 - 2018</p>
               <div className="pt-4 border-t border-border">
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <a 
+                  href="https://pubmed.ncbi.nlm.nih.gov/31988702/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground text-sm leading-relaxed hover:text-primary transition-colors duration-300 inline-block"
+                >
                   Published: Cytogenetic and pollen identification of genus Gagnepainia (Zingiberaceae) in Thailand
-                </p>
+                </a>
               </div>
             </div>
           </motion.div>
