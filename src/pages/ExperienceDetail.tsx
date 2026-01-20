@@ -64,6 +64,51 @@ const experienceDetails: Record<string, {
       "Lead Talus Thailand community",
       "Organized and executed the Talus Thailand IRL event"
     ]
+  },
+  "d1ckdao": {
+    title: "D1ckDAO",
+    role: "AI Researcher",
+    period: "August 2025 - Present",
+    location: "Thailand",
+    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=2670&auto=format&fit=crop",
+    description: "D1ckDAO is a DeSci community fixing men's sexual health — focusing on D1ck problems; ED, low testosterone, male infertility, and foreskin restoration and more.",
+    responsibilities: [
+      "Conduct AI research for health-related data analysis",
+      "Develop machine learning models for health insights",
+      "Contribute to decentralized science (DeSci) initiatives"
+    ]
+  },
+  "aiat": {
+    title: "Artificial Intelligence Association of Thailand",
+    role: "AI Researcher",
+    period: "September 2020 - December 2024",
+    location: "Thailand",
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=2670&auto=format&fit=crop",
+    description: "Working as a Super AI Engineer (AIAT), tackling challenges across various industries and business sectors.",
+    responsibilities: [
+      "Artificial Intelligence (AI) research and development",
+      "Data Science projects across multiple industries",
+      "Document OCR implementation and optimization",
+      "Time Series forecast modeling",
+      "Object detection systems development",
+      "Point cloud data processing",
+      "NLP (Text classification) applications"
+    ]
+  },
+  "mahidol-university": {
+    title: "Mahidol University",
+    role: "Lead Researcher & Data Analyst",
+    period: "August 2016 - August 2020",
+    location: "Thailand",
+    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2670&auto=format&fit=crop",
+    description: "Led research initiatives and data analysis at one of Thailand's premier research universities, contributing to botanical science publications.",
+    responsibilities: [
+      "Lead research projects in plant biology and genetics",
+      "Conduct cytogenetic analysis and pollen identification studies",
+      "Published study on cytogenetics and pollen identification of the genus Gagnepainia (Zingiberaceae) in Thailand",
+      "Data analysis and statistical modeling for research findings",
+      "Collaborate with international research communities"
+    ]
   }
 };
 
