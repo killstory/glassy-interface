@@ -5,65 +5,64 @@ import { ArrowLeft } from "lucide-react";
 const experienceDetails: Record<string, {
   title: string;
   role: string;
-  year: string;
+  period: string;
+  location: string;
   image: string;
   description: string;
   responsibilities: string[];
 }> = {
   "ams-fund": {
-    title: "AMS Fund",
+    title: "AMS FUND",
     role: "Chief Investment Officer",
-    year: "2025",
+    period: "August 2025 - Present",
+    location: "Thailand",
     image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=2670&auto=format&fit=crop",
-    description: "Leading investment strategies and portfolio management for a multi-asset fund focused on emerging technologies and digital assets.",
+    description: "AMS Fund is a private investment fund operated by our family office.",
     responsibilities: [
-      "Develop and execute investment strategies across multiple asset classes",
-      "Lead due diligence processes for potential investments",
-      "Manage portfolio risk and optimize asset allocation",
-      "Build relationships with institutional investors and stakeholders",
-      "Oversee fund performance and reporting"
+      "Oversee strategic fund management operations, delivering consistent and risk adjusted performance in decentralized finance markets.",
+      "Lead capital allocation across yield stablecoin farming, liquidity provisioning, and protocol revenue share models to maximize capital efficiency.",
+      "Establish robust risk management governance and systematic hedging mechanisms to safeguard principal and ensure operational resilience.",
+      "Committed to driving innovation, transparency, and institutional standards within the evolving global DeFi and digital asset ecosystem."
     ]
   },
   "spectre-labs": {
     title: "Spectre Labs",
     role: "Co-Founder",
-    year: "2025",
+    period: "August 2025 - Present",
+    location: "Thailand",
     image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2532&auto=format&fit=crop",
-    description: "Co-founded a cutting-edge research lab focusing on AI and blockchain technology integration.",
+    description: "Spectre Labs is a Thai growth agency for Blockchain projects. We provide both front-end and back-end solutions. We've already delivered results for multiple projects, connecting them with over 50% of Thailand's Crypto KOLs and building communities, content, and tools that drive meaningful growth.",
     responsibilities: [
-      "Define company vision and strategic direction",
-      "Lead research initiatives in AI and decentralized systems",
-      "Build and manage a team of researchers and engineers",
-      "Secure partnerships and funding for research projects",
-      "Publish research findings and represent the lab at conferences"
+      "Launched the GRVT Thailand Trading Competition, achieving 300+ registered traders and $1.84 Billions trading volume.",
+      "Hosted GRVT IRL meetup with 30 KOLs and collaborated with 5 of them to generate 30,000+ impressions across both crypto-newbie and crypto-native audiences.",
+      "Supported Paradex \"Pass Tap\" Affiliate Program covering 50 KOLs and 1st Thailand representative. Organized face-to-face meetings with 20 KOLs and helped maintain $100 Millions committed trading volume per month.",
+      "For Bio Protocol, led Thailand narrative and social momentum during TGE and optimized paid KOL targeting across crypto natives, newbies, and airdrop hunters. Delivered 30,000+ impressions and 300+ engagements with a balanced mix of audience segments."
     ]
   },
   "grvt-exchange": {
-    title: "GRVT Exchange",
-    role: "Consultant & Regional Lead",
-    year: "2025",
+    title: "GRVT",
+    role: "Consultant",
+    period: "July 2025 - Present",
+    location: "Singapore",
     image: "https://images.unsplash.com/photo-1642790106117-e829e14a795f?q=80&w=2532&auto=format&fit=crop",
-    description: "Providing strategic consulting and leading regional expansion for a next-generation derivatives exchange.",
+    description: "GRVT is the world's first compliant peer-to-peer onchain investment marketplace.",
     responsibilities: [
-      "Develop go-to-market strategies for the Southeast Asian region",
-      "Build and nurture relationships with key stakeholders and partners",
-      "Advise on product development and market positioning",
-      "Lead regional team and coordinate with global headquarters",
-      "Drive user acquisition and community growth initiatives"
+      "Regional leader of GRVT Thailand Community",
+      "Increase GRVT's Thailand trading volume to $1.84 Billions through Trading Campaign.",
+      "Boost brand visibility with the first ever GRVT E-Sport Trading Competition.",
+      "Expand the platform's user base in Thailand."
     ]
   },
   "talus-labs": {
-    title: "Talus Labs",
+    title: "Talus Labs, Inc.",
     role: "Regional Lead",
-    year: "2025",
+    period: "April 2025 - Present",
+    location: "United States",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop",
-    description: "Leading regional operations for an AI infrastructure company building decentralized AI solutions.",
+    description: "Talus Labs is the premier AI infra network powering AI Agents that compete and earn.",
     responsibilities: [
-      "Manage regional partnerships and business development",
-      "Coordinate with research teams on AI model development",
-      "Represent the company at industry events and conferences",
-      "Build developer communities and ecosystem partnerships",
-      "Drive adoption of decentralized AI solutions in the region"
+      "Lead Talus Thailand community",
+      "Organized and executed the Talus Thailand IRL event"
     ]
   }
 };
@@ -127,7 +126,11 @@ export default function ExperienceDetail() {
         >
           {/* Header */}
           <div className="mb-12">
-            <span className="text-primary font-mono text-sm mb-4 block">{experience.year}</span>
+            <div className="flex items-center gap-4 mb-4">
+              <span className="text-primary font-mono text-sm">{experience.period}</span>
+              <span className="text-muted-foreground text-sm">•</span>
+              <span className="text-muted-foreground text-sm">{experience.location}</span>
+            </div>
             <h1 className="text-5xl md:text-7xl font-bold text-foreground tracking-tighter mb-4">
               {experience.title}
             </h1>
@@ -144,7 +147,7 @@ export default function ExperienceDetail() {
 
           {/* Responsibilities */}
           <div>
-            <h2 className="text-xl font-semibold text-foreground mb-6">Key Responsibilities</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-6">Key Responsibilities & Achievements</h2>
             <ul className="space-y-4">
               {experience.responsibilities.map((item, i) => (
                 <motion.li
