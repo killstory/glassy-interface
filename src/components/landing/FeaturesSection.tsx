@@ -8,6 +8,7 @@ import grvtCover from "@/assets/grvt-cover.jpg";
 import talusCover from "@/assets/talus-cover.jpeg";
 import talusThumbnail from "@/assets/talus-thumbnail.jpg";
 import aiatCover from "@/assets/aiat-cover.jpg";
+import tecCover from "@/assets/tec-cover.jpg";
 
 // Sorted by date: Present first, then by start month (most recent first)
 const experiences = [
@@ -65,7 +66,7 @@ const experiences = [
     category: "Digital Marketing Analyst", 
     year: "Aug 2020 - Sep 2020",
     slug: "tec",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2670&auto=format&fit=crop"
+    image: tecCover
   },
   { 
     title: "Forest Restoration Unit", 
