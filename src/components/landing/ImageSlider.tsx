@@ -57,18 +57,18 @@ const experiences = [
 ];
 
 export const ImageSlider = () => {
-  // Duplicate for seamless loop
-  const duplicatedExperiences = [...experiences, ...experiences];
+  // Triple duplicate for seamless loop with all images visible
+  const duplicatedExperiences = [...experiences, ...experiences, ...experiences];
 
   return (
-    <div className="w-full py-16 overflow-hidden bg-background border-y border-border">
+    <div className="w-full py-12 overflow-hidden bg-background border-y border-border">
       <style>{`
         @keyframes marquee {
           0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+          100% { transform: translateX(-33.333%); }
         }
         .animate-marquee {
-          animation: marquee 20s linear infinite;
+          animation: marquee 60s linear infinite;
         }
         .slider-container:hover .animate-marquee {
           animation-play-state: paused;
@@ -76,14 +76,14 @@ export const ImageSlider = () => {
       `}</style>
       
       <div className="slider-container">
-        <div className="flex animate-marquee">
+        <div className="flex animate-marquee" style={{ width: 'fit-content' }}>
           {duplicatedExperiences.map((exp, i) => (
             <Link
               key={`${exp.slug}-${i}`}
               to={`/experience/${exp.slug}`}
-              className="flex-shrink-0 w-[300px] md:w-[400px] h-[200px] md:h-[280px] mx-3 group cursor-scale"
+              className="flex-shrink-0 w-[280px] md:w-[350px] h-[180px] md:h-[240px] mx-2 group cursor-scale"
             >
-              <div className="relative w-full h-full overflow-hidden rounded-2xl">
+              <div className="relative w-full h-full overflow-hidden rounded-xl">
                 <img
                   src={exp.image}
                   alt={exp.title}
@@ -94,7 +94,7 @@ export const ImageSlider = () => {
                 <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-500" />
                 
                 {/* Arrow */}
-                <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                <div className="absolute top-3 right-3 w-9 h-9 rounded-full bg-foreground text-background flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                   <ArrowUpRight className="w-4 h-4" />
                 </div>
               </div>
