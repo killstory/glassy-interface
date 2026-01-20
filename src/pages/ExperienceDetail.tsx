@@ -9,6 +9,7 @@ import d1ckdaoCover from "@/assets/d1ckdao-cover.jpeg";
 import grvtCover from "@/assets/grvt-cover.jpg";
 import talusCover from "@/assets/talus-cover.jpeg";
 import aiatCover from "@/assets/aiat-cover.jpg";
+import tecCover from "@/assets/tec-cover.jpg";
 
 const experienceDetails: Record<string, {
   title: string;
@@ -140,7 +141,7 @@ const experienceDetails: Record<string, {
     role: "Digital Marketing Analyst",
     period: "August 2020 - September 2020",
     location: "Thailand",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2670&auto=format&fit=crop",
+    image: tecCover,
     description: "Digital Marketing Analytics and Optimization program at Thailand e-Business Centre.",
     responsibilities: [
       "Analyze digital marketing performance metrics",
