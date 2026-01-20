@@ -4,6 +4,8 @@ import { ArrowLeft, ExternalLink } from "lucide-react";
 
 import d1ckdaoTeamImage from "@/assets/d1ckdao-desci-summit.jpeg";
 import d1ckdaoDesciUncorked from "@/assets/d1ckdao-desci-uncorked.jpeg";
+import aiatCertificate from "@/assets/aiat-certificate.png";
+import aiatTeam from "@/assets/aiat-team.jpg";
 import grvtIrlMeetup from "@/assets/grvt-irl-meetup.png";
 import grvtEsportCompetition from "@/assets/grvt-esport-competition.jpeg";
 import talusSuifestTeam from "@/assets/talus-suifest-team.jpeg";
@@ -145,6 +147,13 @@ const experienceDetails: Record<string, {
       "Object detection systems development",
       "Point cloud data processing",
       "NLP (Text classification) applications"
+    ],
+    links: [
+      { label: "Super AI Engineer", url: "https://superai.aiat.or.th/" }
+    ],
+    gallery: [
+      { image: aiatCertificate, caption: "Super AI Engineer Program Certificate", url: "https://superai.aiat.or.th/2020/super-ai-engineer-2020-ai-developer/" },
+      { image: aiatTeam, caption: "My Super AI Engineer Team" }
     ]
   },
   "mahidol-university": {
