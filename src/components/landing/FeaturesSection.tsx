@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import spectreLabsCover from "@/assets/spectre-labs-cover.png";
 import amsFundCover from "@/assets/ams-fund-cover.png";
 import d1ckdaoCover from "@/assets/d1ckdao-cover.jpeg";
+import grvtCover from "@/assets/grvt-cover.jpg";
 
 // Sorted by date: Present first, then by start month (most recent first)
 const experiences = [
@@ -33,7 +34,7 @@ const experiences = [
     category: "Consultant", 
     year: "Jul 2025 - Present",
     slug: "grvt-exchange",
-    image: "https://images.unsplash.com/photo-1642790106117-e829e14a795f?q=80&w=2532&auto=format&fit=crop"
+    image: grvtCover
   },
   { 
     title: "Talus Labs", 

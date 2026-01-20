@@ -6,6 +6,7 @@ import d1ckdaoTeamImage from "@/assets/d1ckdao-desci-summit.jpeg";
 import spectreLabsCover from "@/assets/spectre-labs-cover.png";
 import amsFundCover from "@/assets/ams-fund-cover.png";
 import d1ckdaoCover from "@/assets/d1ckdao-cover.jpeg";
+import grvtCover from "@/assets/grvt-cover.jpg";
 
 const experienceDetails: Record<string, {
   title: string;
@@ -57,7 +58,7 @@ const experienceDetails: Record<string, {
     role: "Consultant",
     period: "July 2025 - Present",
     location: "Singapore",
-    image: "https://images.unsplash.com/photo-1642790106117-e829e14a795f?q=80&w=2532&auto=format&fit=crop",
+    image: grvtCover,
     description: "GRVT is the world's first compliant peer-to-peer onchain investment marketplace.",
     responsibilities: [
       "Regional leader of GRVT Thailand Community",
