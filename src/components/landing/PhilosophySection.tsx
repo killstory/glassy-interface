@@ -8,7 +8,7 @@ const skills = [
   "DeFi",
   "Fund Management",
   "Knowledge Graphs",
-  "NLP",
+  "Recommendation Systems",
   "Risk Management",
   "Scientific Analysis",
 ];
