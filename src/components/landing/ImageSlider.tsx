@@ -11,7 +11,7 @@ import grvtIrlMeetup from '@/assets/grvt-irl-meetup.png';
 import grvtEsportCompetition from '@/assets/grvt-esport-competition.jpeg';
 import talusSuifestTeam from '@/assets/talus-suifest-team.jpeg';
 import talusSuiSeasonMeetup from '@/assets/talus-sui-season-meetup.jpeg';
-import tecCertificate from '@/assets/tec-certificate.png';
+
 import mahidolPlenaryAward from '@/assets/mahidol-plenary-award.png';
 import mahidolTurfpagAward from '@/assets/mahidol-turfpag-award.png';
 import mahidolSingaporeAward from '@/assets/mahidol-singapore-award.png';
@@ -33,8 +33,6 @@ const galleryItems = [
   // AIAT
   { image: aiatCertificate, caption: "Super AI Engineer Certificate", slug: "aiat" },
   { image: aiatTeam, caption: "My Super AI Engineer Team", slug: "aiat" },
-  // TEC
-  { image: tecCertificate, caption: "Digital Marketing Analytics Certificate", slug: "tec" },
   // Mahidol
   { image: mahidolPlenaryAward, caption: "Plenary Lecture Award", slug: "mahidol-university" },
   { image: mahidolSingaporeAward, caption: "Singapore Symposium Award", slug: "mahidol-university" },
