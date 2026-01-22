@@ -35,16 +35,16 @@ export function HeroSection() {
       <Navigation />
 
       {/* Hero Content */}
-      <div className="flex-1 flex items-center justify-center px-6 md:px-12 py-12 md:py-20">
+      <div className="flex-1 flex items-center justify-center px-6 md:px-12 py-8 md:py-12">
         <div className="text-center max-w-5xl mx-auto">
           {/* Profile Image */}
           <motion.div
-            className="inline-block mb-8 md:mb-10"
+            className="inline-block mb-5 md:mb-6"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl ring-4 ring-background">
+            <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl ring-4 ring-background">
               <img
                 src={profileImage}
                 alt="Paramet Moonkaew"
@@ -55,7 +55,7 @@ export function HeroSection() {
 
           {/* Full Name Typography */}
           <motion.div
-            className="overflow-hidden mb-6 md:mb-8"
+            className="overflow-hidden mb-4 md:mb-5"
             initial="initial"
             animate="animate"
             variants={containerAnim}
@@ -92,7 +92,7 @@ export function HeroSection() {
 
           {/* Subtitle with Bullets */}
           <motion.div
-            className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-0 mb-10 md:mb-12"
+            className="flex flex-col md:flex-row items-center justify-center gap-1.5 md:gap-0 mb-6 md:mb-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
@@ -126,7 +126,7 @@ export function HeroSection() {
 
           {/* Divider */}
           <motion.div
-            className="mt-8 mb-6 flex items-center justify-center gap-4"
+            className="mt-6 mb-4 flex items-center justify-center gap-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.1, duration: 0.6 }}
